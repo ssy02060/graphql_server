@@ -1,0 +1,11 @@
+{
+  "name": "graphql_server",
+  "version": "1.0.0",
+  "description": "Book DB api with GraphQL",
+  "main": "index.js",
+  "repository": "https://github.com/ssy02060/graphql_server",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
