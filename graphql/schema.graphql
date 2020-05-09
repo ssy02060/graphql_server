@@ -1,0 +1,23 @@
+type Books{
+    bookId: Int!
+    bookName: String!
+    author: String!
+    publishier: String!
+}
+type Bookstores{
+    storeId: Int!
+    storeName: String!
+    location: String!
+}
+type Users{
+    userId: String!
+    userPassword: String!
+    userName: String!
+    userAge: Int!
+    email: String!
+    
+}
+type Query{
+    Books: Books!
+    Bookstores: Bookstores!
+}
