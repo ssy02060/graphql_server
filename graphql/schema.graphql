@@ -1,4 +1,4 @@
-type Books{
+type Book{
     bookId: Int!
     bookName: String!
     author: String!
@@ -18,6 +18,8 @@ type Users{
     
 }
 type Query{
-    Books: Books!
+    Books: [Book]!
+    # !할 필요 없음 id에 해당하는 book을 찾을수 없을수도 있으니까..
+    Book(id : Int!) : Book
     Bookstores: Bookstores!
 }
