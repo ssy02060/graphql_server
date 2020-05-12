@@ -1,25 +1,24 @@
 type Book{
-    bookId: Int!
-    bookName: String!
+    id: Int!
+    name: String!
     author: String!
     publishier: String!
 }
 type Bookstores{
-    storeId: Int!
-    storeName: String!
+    id: Int!
+    name: String!
     location: String!
 }
 type Users{
-    userId: String!
-    userPassword: String!
-    userName: String!
-    userAge: Int!
+    id: String!
+    password: String!
+    name: String!
+    age: Int!
     email: String!
-    
 }
 type Query{
-    Books: [Book]!
+    books: [Book]!
     # !할 필요 없음 id에 해당하는 book을 찾을수 없을수도 있으니까..
-    Book(id : Int!) : Book
-    Bookstores: Bookstores!
+    book(id : Int!) : Book
+    bookstores: Bookstores!
 }
